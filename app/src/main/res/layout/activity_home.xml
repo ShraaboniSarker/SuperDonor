@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/drawer"
-    tools:context="com.example.shraaboni.superdonor.Activity.HomeActivity">
+    tools:context="com.example.shraaboni.superdonor.Activity.activity.HomeActivity">
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"

@@ -9,35 +9,40 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity.MainActivity">
-             <!--<intent-filter>-->
-             <!--<action android:name="android.intent.action.MAIN" />-->
+        <activity android:name=".Activity.activity.MainActivity">
+             <intent-filter>
+             <action android:name="android.intent.action.MAIN" />
 
 
-             <!--<category android:name="android.intent.category.LAUNCHER" />-->
-             <!--</intent-filter>-->
+             <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>
         </activity>
-        <activity android:name=".Activity.LoginActivity" />
-        <activity android:name=".Activity.SignUpActivity" />
-        <activity android:name=".Activity.UserDetails" />
-        <activity android:name=".Activity.HomeActivity"></activity>
+        <activity android:name=".Activity.activity.LoginActivity" />
+        <activity android:name=".Activity.activity.SignUpActivity" />
+        <activity android:name=".Activity.activity.UserDetails" />
+        <activity android:name=".Activity.activity.HomeActivity" />
         <activity
-            android:name=".Activity.NavigateHome"
+            android:name=".Activity.activity.NavigateHome"
             android:label="@string/title_activity_navigate_home"
             android:theme="@style/AppTheme">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
         </activity>
-        <activity android:name=".Activity.RequestPanel">
-        </activity>
-        <provider android:authorities="com.facebook.app.FacebookContentProvider1712897172350768"
+        <activity android:name=".Activity.activity.RequestPanel"></activity>
+
+        <provider
             android:name="com.facebook.FacebookContentProvider"
-            android:exported="true"/>
+            android:authorities="com.facebook.app.FacebookContentProvider1712897172350768"
+            android:exported="true" />
+
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id" />
+
+        <activity android:name=".Activity.activity.ProfileActivity"></activity>
     </application>
 
 </manifest>
